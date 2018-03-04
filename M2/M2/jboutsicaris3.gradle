@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: 'base'
+
+defaultTasks 'build'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.0"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile project(":lib")
+    compile 'com.android.support:appcompat-v7:19.0.1'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.10'
+}
+
+task jar << {
+
+}
+
+task clean << {
+    delete outputFiles
+}
+
+task javadoc << {
+
+}
+
+task compileJava << {
+
+}
+
+task compileTest << {
+
+}

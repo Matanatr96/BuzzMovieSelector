@@ -1,0 +1,16 @@
+/.idea/.name
+.gradle
+/local.properties
+local.properties
+local.*
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/*.xml
+CS2340.iml
+app/app.iml
+.DS_Store
+/build
+/captures
+*.class
+.idea/dictionaries
+.idea/inspectionProfiles/*
